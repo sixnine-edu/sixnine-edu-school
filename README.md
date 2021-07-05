@@ -1,16 +1,18 @@
- ## 69教育管理后台——学校端 
- 
+ ## 69教育管理后台——学校端
+
 ### 技术栈
 前端:Vue、Element-ui、Avue.js
 
 后台：Java Spring Boot
 
-npm install 
 
-npm run dev
+### 运行步骤
+1、npm install
 
-npm run build
-	
+2、npm run dev
+
+打包：npm run build
+
 ### 功能截图
 
 #### 教务管理中心
