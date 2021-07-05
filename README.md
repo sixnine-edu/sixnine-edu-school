@@ -1,4 +1,11 @@
-# sixnine-edu-school
+ ## 69教育管理后台——学校端 
+ 
+### 技术栈
+前端:Vue、Element-ui、Avue.js
+
+后台：Java Spring Boot
+	
+	
 ### 功能截图
 
 #### 教务管理中心
