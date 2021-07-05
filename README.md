@@ -4,7 +4,12 @@
 前端:Vue、Element-ui、Avue.js
 
 后台：Java Spring Boot
-	
+
+npm install 
+
+npm run dev
+
+npm run build
 	
 ### 功能截图
 
