@@ -25,7 +25,6 @@
 #### 支付
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_8.png" width="950" height="auto"/>
 
-
 #### 课程视频播放
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_9.png" width="950" height="auto"/>
 
