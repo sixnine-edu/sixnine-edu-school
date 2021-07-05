@@ -1,4 +1,4 @@
 # sixnine-edu-school
 ### 功能截图
 
- <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_1.png" width="1000" height="870"/>
+ <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_1.png" width="640" height="400"/>
