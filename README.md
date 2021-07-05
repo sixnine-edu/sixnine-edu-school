@@ -1,4 +1,4 @@
 # sixnine-edu-school
-### 持续更新中
+### 功能截图
 
- <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG278.png" width="624" height="371"/>
+ <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_1.png" width="1000" height="870"/>
