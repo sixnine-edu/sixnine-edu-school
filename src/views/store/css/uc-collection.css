@@ -1,0 +1,421 @@
+/* 个人中心-商品收藏 */
+
+.user-center .uc-collection .goods-list .list-con {
+    margin-top: -15px;
+    width: 1080px;
+}
+
+.user-center .uc-collection .goods-list .list-con .item {
+    border: 1px solid #eee;
+    width: 253px;
+}
+
+.user-center .uc-collection .goods-list .list-con .item:hover {
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.07);
+}
+
+.user-center .uc-collection .goods-list .list-con .item .goods-img {
+    width: 253px;
+    height: 253px;
+    line-height: 253px;
+}
+
+.user-center .uc-collection .goods-list .list-con .item .goods-msg {
+    padding: 10px;
+}
+
+.user-center .uc-collection .goods-action {
+    text-align: center;
+    line-height: 35px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+}
+
+.user-center .uc-collection .goods-action .action-a {
+    color: #666;
+    text-align: center;
+    width: 50%;
+}
+
+.user-center .uc-collection .goods-action .action-a.a1 {
+    border-right: 1px solid #eee;
+}
+
+.user-center .uc-collection .goods-action .action-a .icon {
+    display: inline-block;
+    vertical-align: top;
+    background: url(../../../assets/img/icons.png) no-repeat;
+    margin-right: 5px;
+}
+
+.user-center .uc-collection .goods-action .action-a.a1 .icon {
+    width: 17px;
+    height: 15px;
+    margin-top: 10px;
+    background-position: 0 -38px;
+}
+
+.user-center .uc-collection .goods-action .action-a.a2 .icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 10px;
+    background-position: 0 -415px;
+}
+
+.user-center .uc-collection .goods-action .action-a:hover {
+    color: #e1251b;
+}
+
+.user-center .uc-collection .goods-action .action-a.a1:hover .icon {
+    background-position: -22px -38px;
+}
+
+.user-center .uc-collection .goods-action .action-a.a2:hover .icon {
+    background-position: -19px -415px;
+}
+
+.user-center .uc-collection .item-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.user-center .uc-collection .batch-edit .item-mask {
+    display: block;
+}
+
+.user-center .uc-collection .goods-list .list-con .item.batch-edit:hover {
+    opacity: 1;
+    box-shadow: none;
+    border-color: #e1251b;
+}
+
+.user-center .uc-collection .goods-list .list-con .item.checked {
+    border-color: #e1251b;
+}
+
+.user-center .uc-collection .item-mask .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.user-center .uc-collection .goods-list .list-con .item.checked .item-mask .icon {
+    background: #e1251b;
+}
+
+.user-center .uc-collection .item-mask .icon::before {
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    display: block;
+    width: 16px;
+    height: 12px;
+    content: " ";
+    background: url(../../../assets/img/icons.png) no-repeat 0 -746px;
+}
+
+.user-center .uc-collection .pages {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* 个人中心-商品收藏 end */
+
+/* 个人中心-店铺收藏 */
+
+.user-center .uc-collection .shop-list .item {
+    border: 1px solid #eee;
+    display: flex;
+    margin-bottom: 15px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.user-center .uc-collection .shop-list .item:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg {
+    width: 287px;
+    border-right: 1px solid #eee;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin: 10px auto;
+    font-size: 0;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-name {
+    font-size: 14px;
+    display: block;
+    height: 16px;
+    line-height: 14px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-name .self {
+    background: #e1251b;
+    color: #fff;
+    padding: 0 3px;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .collection-number {
+    display: block;
+    height: 19px;
+    line-height: 19px;
+    color: #999;
+    text-align: center;
+    margin-top: 10px;
+    font-family: arial;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action {
+    text-align: center;
+    line-height: 35px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a {
+    color: #666;
+    text-align: center;
+    width: 50%;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a.a1 {
+    border-right: 1px solid #eee;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a .icon {
+    display: inline-block;
+    vertical-align: top;
+    background: url(../../../assets/img/icons.png) no-repeat;
+    margin-right: 5px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a.a1 .icon {
+    width: 14px;
+    height: 13px;
+    margin-top: 11px;
+    background-position: -28px -458px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a.a2 .icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 10px;
+    background-position: 0 -415px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a:hover {
+    color: #e1251b;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a.a1:hover .icon {
+    background-position: -9px -458px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-msg .shop-action .action-a.a2:hover .icon {
+    background-position: -19px -415px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods {
+    flex: 1;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav {
+    height: 28px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-box {
+    flex: 1;
+    display: flex;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-box .nav-item {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 14px;
+    border: 1px solid #eee;
+    margin-left: -1px;
+    position: relative;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-box .nav-item.active,
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-box .nav-item:hover {
+    border-color: #e1251b;
+    z-index: 1;
+    color: #e1251b;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-box .nav-item .number {
+    font-family: arial;
+    margin-left: 3px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page {
+    display: flex;
+    align-items: center;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page .page-number {
+    font-family: arial;
+    margin-right: 15px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page .page-number .page-current {
+    color: #e1251b;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page .page-btn {
+    display: flex;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page .page-btn .prev,
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page .page-btn .next {
+    width: 30px;
+    height: 20px;
+    line-height: 18px;
+    border: 1px solid #e4e4e4;
+    margin-left: -1px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Consolas;
+    color: #333;
+    cursor: pointer;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .shop-nav .nav-page .page-btn .limit {
+    color: #ccc;
+    background: #f9f9f9;
+    cursor: not-allowed;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list .list-item {
+    text-align: center;
+    margin-left: 15px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list .list-item:hover {
+    opacity: 0.8;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list .list-item .img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    font-size: 0;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list .list-item .img img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list .list-item .price {
+    margin-top: 10px;
+    color: #000;
+}
+
+.user-center .uc-collection .shop-list .item .shop-goods .goods-list .list-item .price .big {
+    font-size: 14px;
+}
+
+.user-center .uc-collection .shop-list .item .item-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    display: none;
+}
+
+.user-center .uc-collection .shop-list .item.batch-edit .item-mask {
+    display: block;
+}
+
+.user-center .uc-collection .shop-list .item.batch-edit:hover {
+    box-shadow: none;
+    border-color: #e1251b;
+}
+
+.user-center .uc-collection .shop-list .item.checked {
+    border-color: #e1251b;
+}
+
+.user-center .uc-collection .shop-list .item .item-mask .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.user-center .uc-collection .shop-list .item.checked .item-mask .icon {
+    background: #e1251b;
+}
+
+.user-center .uc-collection .shop-list .item .icon::before {
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    display: block;
+    width: 16px;
+    height: 12px;
+    content: " ";
+    background: url(../../../assets/img/icons.png) no-repeat 0 -746px;
+}
+
+/* 个人中心-店铺收藏 end */

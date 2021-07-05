@@ -1,0 +1,210 @@
+
+/* 订单支付 */
+
+.payment .step-box .left .img {
+    background: url(../../../assets/img/icons.png) no-repeat -86px -249px;
+}
+
+.payment .step-box .left .text {
+    line-height: 40px;
+}
+
+.payment .payment-con .pay-box {
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.payment .payment-con .pay-box .pay-info {
+    padding-left: 52px;
+    position: relative;
+}
+
+.payment .payment-con .pay-box .pay-info .tag {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.payment .payment-con .pay-box .pay-info .tag.success {
+    background: url(../../../assets/img/icons.png) no-repeat 0 -476px;
+}
+
+.payment .payment-con .pay-box .pay-info .item {
+    display: flex;
+}
+
+.payment .payment-con .pay-box .pay-info .item .tit {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    flex: 1;
+    font-weight: 600;
+}
+
+.payment .payment-con .pay-box .pay-info .item .total-pay {
+    height: 20px;
+    line-height: 20px;
+}
+
+.payment .payment-con .pay-box .pay-info .item .total-pay .price {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    margin-right: 3px;
+}
+
+.payment .payment-con .pay-box .pay-info .item .rest-time {
+    height: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    flex: 1;
+    color: #999;
+    display: flex;
+}
+
+.payment .payment-con .pay-box .pay-info .item .rest-time .time {
+    color: #e1251b;
+    margin: 0 3px;
+}
+
+.payment .payment-con .pay-box .pay-info .item .order-det {
+    height: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    position: relative;
+    padding-right: 15px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+    color: #999;
+}
+
+.payment .payment-con .pay-box .pay-info .item .order-det:hover {
+    color: #e1251b;
+}
+
+.payment .payment-con .pay-box .pay-info .item .order-det::before,
+.payment .payment-con .pay-box .pay-info .item .order-det::after {
+    position: absolute;
+    right: 0;
+    display: block;
+    content: " ";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-radius: 2px;
+}
+
+.payment .payment-con .pay-box .pay-info .item .order-det::before {
+    border-top: 5px solid #777;
+    top: 4px;
+}
+
+.payment .payment-con .pay-box .pay-info .item .order-det:hover::before {
+    border-top: 5px solid #e1251b;
+    top: 4px;
+}
+
+.payment .payment-con .pay-box .pay-info .item .order-det::after {
+    border-top: 5px solid #fff;
+    top: 3px;
+}
+
+.payment .payment-con .pay-box .order-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-left: 52px;
+}
+
+.payment .payment-con .pay-box .order-info .text {
+    display: flex;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.payment .payment-con .pay-box .order-info .text:last-child {
+    margin-bottom: 0;
+}
+
+.payment .payment-con .pay-box .order-info .text .label {
+    width: 70px;
+}
+
+.payment .payment-con .pay-box .order-info .text .con {
+    margin-right: 20px;
+}
+
+.payment .payment-con .pay-box .order-info .text .con.con-items {
+    flex: 1;
+}
+
+.payment .payment-con .section-payment {
+    margin-top: 30px;
+}
+
+.payment .payment-con .section-payment .tit {
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+.payment .payment-con .section-payment .con {
+    display: flex;
+}
+
+.payment .payment-con .section-payment .con .item {
+    width: 174px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.payment .payment-con .section-payment .con .item:hover {
+    border-color: #e1251b;
+}
+.payment .payment-con .section-payment .con .item.active{
+    border-color: #e1251b;
+}
+
+.payment .payment-con .section-payment .btn {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 174px;
+    height: 42px;
+    line-height: 42px;
+    background: #e1251b;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.payment .payment-con .section-payment .btn:hover {
+    opacity: 0.9;
+}
+
+.payment .payment-con .section-payment .btn.no-pay {
+    cursor: not-allowed;
+    background: #ccc;
+}
+
+/* 订单支付 end  */
+

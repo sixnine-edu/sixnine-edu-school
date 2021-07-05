@@ -1,0 +1,25 @@
+import i18n from '../../i18n/i18n'
+export const tableOption = {
+  border: true,
+  index: true,
+  indexLabel: i18n.t('sysManagement.serialNumber'),
+  stripe: true,
+  menuAlign: 'center',
+  align: 'center',
+  addBtn: false,
+  editBtn: false,
+  delBtn: false,
+  column: [
+    {
+      label: i18n.t('sysManagement.sysManagement'),
+      prop: 'shortmsgName'
+    }
+    // ,
+    // {
+    //   label: '平台图片',
+    //   prop: 'pic',
+    //   type: 'upload',
+    //   imgWidth: 150
+    // }
+  ]
+}

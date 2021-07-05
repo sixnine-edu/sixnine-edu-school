@@ -1,0 +1,120 @@
+
+/* 个人中心-收货地址 */
+
+.user-center .address .add-address {
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.user-center .address .add-address .add-btn {
+    padding: 5px 15px;
+    background: #e1251b;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.user-center .address .add-address .add-btn:hover {
+    opacity: 0.9;
+}
+
+.user-center .address .add-address .add-limit {
+    color: #999;
+}
+
+.user-center .address .add-address .add-limit .number {
+    color: #e1251b;
+    margin: 0 3px;
+}
+
+.user-center .address .address-list .item {
+    margin-top: 20px;
+    border: 1px solid;
+    border-color: #eee;
+    padding: 15px 20px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.user-center .address .address-list .item:hover {
+    border-color: #e1251b;
+}
+
+.user-center .address .address-list .item .item-row {
+    display: flex;
+    align-items: center;
+}
+
+.user-center .address .address-list .item .item-row .name,
+.user-center .address .address-list .item .item-row .phone-number {
+    font-size: 14px;
+    font-family: arial;
+    margin-right: 20px;
+}
+
+.user-center .address .address-list .item .item-row .default-btn {
+    color: #005ea7;
+    display: none;
+}
+
+.user-center .address .address-list .item:hover .item-row .default-btn {
+    display: block;
+}
+
+.user-center .address .address-list .item .item-row .default-btn:hover {
+    color: #e1251b;
+}
+
+.user-center .address .address-list .item.default-address .item-row .default-btn {
+    display: block;
+    background: #e1251b;
+    color: #fff;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.user-center .address .address-list .item .item-row .action-box {
+    flex: 1;
+    text-align: right;
+    display: none;
+}
+
+.user-center .address .address-list .item:hover .item-row .action-box {
+    display: block;
+}
+
+.user-center .address .address-list .item .item-row .action-box .edit,
+.user-center .address .address-list .item .item-row .action-box .delete {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../../../assets/img/icons.png) no-repeat;
+    cursor: pointer;
+}
+
+.user-center .address .address-list .item .item-row .action-box .edit {
+    background-position: 0 -434px;
+    margin-right: 10px;
+}
+
+.user-center .address .address-list .item .item-row .action-box .edit:hover {
+    background-position: -19px -434px;
+}
+
+.user-center .address .address-list .item .item-row .action-box .delete {
+    background-position: 0 -415px;
+}
+
+.user-center .address .address-list .item .item-row .action-box .delete:hover {
+    background-position: -19px -415px;
+}
+
+.user-center .address .address-list .item .address-detail {
+    color: #999;
+    margin-top: 10px;
+}
+/* 个人中心-收货地址 end */

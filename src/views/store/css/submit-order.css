@@ -1,0 +1,884 @@
+
+/* 提交订单 */
+.submit-order div {
+    
+    box-sizing: content-box;
+}
+.submit-order .step-box .left .img {
+    background: url(../../../assets/img/icons.png) no-repeat -43px -249px;
+}
+
+.submit-order .submit-box {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.submit-order .submit-box:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
+
+.submit-order .submit-box .tit {
+    padding: 10px 0;
+    display: flex;
+    height: 14px;
+    line-height: 14px;
+}
+.submit-order .submit-box .remarks-con {
+    padding-bottom: 36px;
+    align-items: center;
+}
+
+.submit-order .submit-box .tit .text {
+    font-size: 14px;
+    font-weight: 600;
+}
+.submit-order .submit-box .tit .text.shop-remark{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.submit-order .submit-box .tit .action {
+    font-size: 12px;
+    color: #999;
+    line-height: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.submit-order .submit-box .tit .action:hover {
+    color: #e1251b;
+}
+
+.submit-order .submit-box .con {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.submit-order .submit-box .item {
+    border: 1px solid #eee;
+    margin-left: 20px;
+    margin-top: 20px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.submit-order .submit-box .item:hover,
+.submit-order .submit-box .item.active {
+    border-color: #e1251b;
+}
+
+.submit-order .submit-box .item:first-child {
+    margin-left: 0;
+}
+
+/* 收货地址 */
+
+.submit-order .submit-box .address-box .item {
+    padding: 20px 15px 20px;
+    width: 242px;
+    min-height: 75px;
+}
+
+.submit-order .submit-box .address-box .item:nth-child(4n-3) {
+    margin-left: 0;
+}
+
+.submit-order .submit-box .address-box .item .name-phone {
+    margin: 5px 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.submit-order .submit-box .address-box .item .name-phone .name {
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.submit-order .submit-box .address-box .item .name-phone .phone {
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.submit-order .submit-box .address-box .item .default-tag {
+    display: none;
+    background: #e1251b;
+    color: #fff;
+    padding: 0 3px;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.submit-order .submit-box .address-box .item.default-address .default-tag {
+    display: inline-block;
+}
+
+.submit-order .submit-box .address-box .item .set-default {
+    color: #005ea7;
+    vertical-align: top;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-left: 10px;
+    display: none;
+}
+
+.submit-order .submit-box .address-box .item:hover .set-default,
+.submit-order .submit-box .address-box .item.active .set-default {
+    display: inline-block;
+}
+
+.submit-order .submit-box .address-box .item.default-address .set-default {
+    display: none;
+}
+
+.submit-order .submit-box .address-box .item .set-default:hover {
+    color: #e1251b;
+}
+
+.submit-order .submit-box .address-box .item .address-detail {
+    color: #999;
+    line-height: 20px;
+}
+
+.submit-order .submit-box .address-box .item .del-edit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: none;
+}
+
+.submit-order .submit-box .address-box .item:hover .del-edit {
+    display: block;
+}
+
+.submit-order .submit-box .address-box .item .del-edit .del,
+.submit-order .submit-box .address-box .item .del-edit .edit {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../../../assets/img/icons.png) no-repeat;
+    cursor: pointer;
+}
+
+.submit-order .submit-box .address-box .item .del-edit .edit {
+    background-position: 0 -434px;
+}
+
+.submit-order .submit-box .address-box .item .del-edit .del {
+    margin-left: 5px;
+    background-position: 0 -415px;
+}
+
+.submit-order .submit-box .address-box .item .del-edit .edit:hover {
+    background-position: -19px -434px;
+}
+
+.submit-order .submit-box .address-box .item .del-edit .del:hover {
+    background-position: -19px -415px;
+}
+
+.submit-order .submit-box .address-box .item.default-address .del-edit .del {
+    display: none;
+}
+
+.submit-order .submit-box .address-box .item.add-address:hover {
+    border-color: #ddd;
+}
+
+.submit-order .submit-box .address-box .item.add-address .add-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #999;
+}
+
+.submit-order .submit-box .address-box .item.add-address .img {
+    width: 30px;
+    height: 30px;
+    font-family: arial;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 22px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.submit-order .submit-box .address-box .item.add-address .text {
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.submit-order .submit-box .address-box .item.add-address:hover .img {
+    background: #e1251b;
+    color: #fff;
+}
+
+.submit-order .submit-box .address-box .item.add-address:hover .text {
+    color: #e1251b;
+}
+
+/* 收货地址 end */
+
+/* 支付方式 */
+
+.submit-order .submit-box .pay-way .item,
+.submit-order .submit-box .delivery-way .item {
+    padding: 8px 30px;
+}
+
+/* 支付方式 end */
+
+/* 积分抵扣 */
+
+.integral-box .integral-item {
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.integral-box .integral-item.integral-input-box {
+    color: #999999;
+}
+.integral-box .integral-item.integral-input-box .text {
+    width: 60px;
+    border: 1px solid #ddd;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-family: arial;
+}
+
+/* 去除 type="number" 箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+/* 去除number箭头 end */
+
+.integral-box .integral-item .integral-money {
+    color: #e43130;
+}
+
+.integral-box .integral-item.integral-text {
+    width: 50%;
+    background-color: #f6f6f6;
+    margin-top: 5px;
+}
+.integral-box .integral-item.integral-text .text-item {
+    margin-left: 80px;
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-gray {
+    color: #888888;
+}
+
+
+/* 积分抵扣 end */
+
+
+
+/* 配送方式 */
+
+.submit-order .submit-box .delivery-way .description {
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 8px 0;
+    color: #999;
+}
+
+/* 配送方式 end */
+
+/* 商品信息 */
+
+.submit-order .submit-box.goods-info {
+    padding-bottom: 0;
+}
+
+.submit-order .submit-box .goods-msg {
+    margin-top: 20px;
+}
+
+.submit-order .submit-box .goods-msg .msg-tab {
+    padding: 10px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    display: flex;
+}
+
+.submit-order .submit-box .goods-msg .msg-tab .img,
+.submit-order .submit-box .goods-msg .msg-con .img {
+    padding: 0 10px 0 20px;
+    width: 80px;
+}
+
+.submit-order .submit-box .goods-msg .msg-tab .info {
+    width: 450px;
+}
+
+.submit-order .submit-box .goods-msg .msg-tab .unit-price,
+.submit-order .submit-box .goods-msg .msg-con .unit-price,
+.submit-order .submit-box .goods-msg .msg-tab .number,
+.submit-order .submit-box .goods-msg .msg-con .number,
+.submit-order .submit-box .goods-msg .msg-tab .total,
+.submit-order .submit-box .goods-msg .msg-con .total {
+    width: 220px;
+    text-align: center;
+}
+
+.submit-order .submit-box .goods-msg .msg-con {
+    background: #f9f9f9;
+    padding-bottom: 25px;
+    margin-top: 15px;
+}
+
+.submit-order .submit-box .goods-msg .shop-msg {
+    padding: 10px 0;
+    height: 16px;
+    background: #fff;
+}
+
+.submit-order .submit-box .goods-msg .shop-msg .self {
+    background:#e1251b;
+    color:#fff;
+    padding: 1px 3px;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 2px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.submit-order .submit-box .goods-msg .shop-msg .shop-name {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .goods-box {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .goods-box::after {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    display: block;
+    width: auto;
+    height: 1px;
+    background: #eee;
+    content: " ";
+}
+
+.submit-order .submit-box .goods-msg .msg-con .img-box {
+    display: block;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .info {
+    line-height: 20px;
+    align-self: flex-start;
+    width: 450px;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .info .name {
+    max-width: 380px;
+    max-height: 36px;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .info .name:hover {
+    color: #e1251b;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .info .sku {
+    max-width: 380px;
+    height: 20px;
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .unit-price,
+.submit-order .submit-box .goods-msg .msg-con .freight,
+.submit-order .submit-box .goods-msg .msg-con .number {
+    font-family: verdana;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .total {
+    font-family: verdana;
+    font-weight: 600;
+    color: #e1251b;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .remake-box {
+    margin: 25px 20px 0;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .remake-box .text {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    height: 20px;
+    width: 350px;
+    font-size: 12px;
+    font-family: arial;
+}
+
+.submit-order .submit-box .goods-msg .msg-con .coupon-list {
+    margin: 25px 20px 5px;
+}
+
+/* 商品信息 end */
+
+/* 发票信息 */
+
+.submit-order .submit-box .invoice-msg .invoice-text {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.submit-order .submit-box .invoice-msg .invoice-btn {
+    margin-top: 20px;
+    color: #005ea7;
+}
+
+.submit-order .submit-box .invoice-msg .invoice-btn:hover {
+    color: #e1251b;
+}
+
+/* 发票信息 end */
+
+/* 优惠信息 */
+
+.submit-order .submit-box .coupon-list {
+    margin-top: 20px;
+    border: 1px solid #eee;
+}
+
+.submit-order .submit-box .coupon-list .coupon-tab {
+    display: flex;
+    background: #f9f9f9;
+    border-bottom: 0;
+}
+
+.submit-order .submit-box .coupon-list .coupon-tab .tab-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit-order .submit-box .coupon-list .coupon-tab .tab-item.active {
+    color: #e1251b;
+    background: #fff;
+}
+
+.submit-order .submit-box .coupon-list .coupon-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.submit-order .submit-box .coupon-list .c-item {
+    margin: 20px 0 0 20px;
+    background: #f9f9f9;
+    width: 215px;
+    position: relative;
+    cursor: pointer;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type {
+    background: #e1251b;
+    padding: 15px 10px 12px;
+    color: #fff;
+    position: relative;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type::before,
+.submit-order .submit-box .coupon-list .c-item .coupon-type::after {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: " ";
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type::before {
+    left: -5px;
+}
+.submit-order .submit-box .coupon-list .c-item .coupon-type::after {
+    right: -5px;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type .coupon-price {
+    display: flex;
+    align-items: center;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type .coupon-price .price {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: arial;
+    color: #fff;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type .coupon-price .price .big {
+    font-size: 24px;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type .coupon-price .limit {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: arial;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-type .coupon-time {
+    margin: 5px 0 5px 10px;
+    font-family: arial;
+    opacity: 0.7;
+    line-height: 16px;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-info {
+    padding: 5px 15px 12px;
+    position: relative;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-info::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: url(../../../assets/img/icons.png) no-repeat;
+    background-position: -2px -783px;
+    content: " ";
+    z-index: 3;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-info .range-item {
+    margin-top: 10px;
+    color: #999;
+    display: flex;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-info .range-item .label {
+    color: #000;
+}
+
+.submit-order .submit-box .coupon-list .c-item .coupon-info .range-item .text {
+    flex: 1;
+}
+
+.submit-order .submit-box .coupon-list .c-item.check .coupon-type::before,
+.submit-order .submit-box .coupon-list .c-item.check .coupon-type::after {
+    display: none;
+}
+
+.submit-order .submit-box .coupon-list .c-item.check .coupon-info::before {
+    background: none;
+}
+
+.submit-order .submit-box .coupon-list .c-item.check {
+    background: #fff;
+}
+
+.submit-order .submit-box .coupon-list .c-item.check .coupon-info {
+    box-sizing: border-box;
+    border: 1px solid #e1251b;
+    border-top: 0;
+}
+
+.submit-order .submit-box .coupon-list .c-item.check::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    border: 10px solid transparent;
+    border-right: 10px solid #e1251b;
+    border-bottom: 10px solid #e1251b;
+}
+
+.submit-order .submit-box .coupon-list .c-item.check::after {
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+    display: block;
+    width: 10px;
+    height: 8px;
+    content: " ";
+    background: url(../../../assets/img/icons.png) no-repeat;
+    background-position: -21px -750px;
+}
+
+.submit-order .submit-box .coupon-list .c-item.useless {
+    cursor: not-allowed;
+}
+
+.submit-order .submit-box .coupon-list .c-item.useless .coupon-type {
+    background: #ccc;
+}
+
+.submit-order .submit-box .coupon-list .c-item.useless .coupon-info::before {
+    background-position: 0 -791px;
+}
+
+/* 优惠信息 end */
+
+/* 留言 */
+
+.submit-order .submit-box .remakes .text {
+    border: 0;
+    border: 1px solid #eee;
+    padding: 10px;
+    width: 350px;
+    margin-left: 20px;
+}
+
+/* 留言 end */
+
+/* 未选中样式 */
+/deep/ .el-checkbox__inner {
+    border-radius: 50%;
+    border-color: #a8a8a8;
+    width: 16px;
+    height: 16px;
+}
+/deep/ .el-checkbox {
+    color: #bbb;
+}
+/deep/ .el-checkbox .el-checkbox__input {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+/deep/ .el-checkbox__input.is-focus .el-checkbox__inner {
+    border-color: #bbb;
+}
+/* 选中框样式 */
+/deep/ .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #e43130;
+}
+/deep/ .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: #e43130;
+    border-color: #e43130;
+}
+/* 选中对号 */
+/deep/ .el-checkbox__input .el-checkbox__inner::after {
+    /* 对号 */
+    border: 2px solid #fff;
+    /* 不覆盖下面的 会 导致对号变形 */
+    box-sizing: content-box;
+    content: "";
+    border-left: 0;
+    border-top: 0;
+    height: 6px;
+    left: 4px;
+    position: absolute;
+    top: 2px;
+    width: 3px;
+    transform: rotate(45deg) scaleY(1);
+}
+/* 积分抵现 */
+
+/* 结算区 */
+
+.submit-order .statistic-box {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.submit-order .statistic-box .item {
+    display: flex;
+    justify-content: flex-end;
+    height: 24px;
+    min-height: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.submit-order .statistic-box .item .tit,
+.submit-order .detail-box .item .tit {
+    width: 180px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.submit-order .statistic-box .item .tit .number {
+    color: #e1251b;
+    margin-right: 3px;
+}
+
+.submit-order .statistic-box .item .con,
+.submit-order .detail-box .item .con {
+    min-width: 125px;
+    text-align: right;
+    margin-right: 20px;
+    font-family: verdana;
+}
+
+.submit-order .detail-box {
+    padding: 15px 0;
+    line-height: 20px;
+    text-align: right;
+    border-top: 1px solid #eee;
+    color: #999;
+    background-color: #f9f9f9;
+}
+
+.submit-order .detail-box .item {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 25px;
+}
+
+.submit-order .detail-box .item .tit {
+    color: #000;
+}
+
+.submit-order .detail-box .item .con {
+    color: #e1251b;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.submit-order .detail-box .item .text {
+    margin-right: 20px;
+}
+
+.submit-order .btn-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-order .btn-box .btn {
+    display: block;
+    width: 135px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #e1251b;
+    color: #fff;
+    margin: 20px 20px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.submit-order .btn-box .btn:hover {
+    opacity: 0.8;
+}
+
+/* 结算区 end */
+
+/* 弹窗 */
+
+.popup-box .con .invoice-tab {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.popup-box .con .invoice-tab .tab-item {
+    border: 1px solid #ddd;
+    padding: 5px 20px;
+    margin-right: 12px;
+}
+
+.popup-box .con .invoice-tab .tab-item.active {
+    border-color: #e1251b;
+}
+
+.popup-box .con .invoice-tip {
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+}
+
+.popup-box .con .invoice-tip .tip-item {
+    line-height: 20px;
+    color: #666;
+}
+
+.popup-box .con .edit .text-box .invoice-title {
+    display: flex;
+}
+
+.popup-box .con .edit .text-box .invoice-title .tit-item {
+    border: 1px solid #ddd;
+    padding: 5px 20px;
+    margin-right: 12px;
+}
+
+.popup-box .con .edit .text-box .invoice-title .tit-item.active {
+    border-color: #e1251b;
+}
+
+.popup-box .con .edit .item .label,
+.popup-box .con .edit .item .label-btn {
+    width: 100px;
+}
+
+/* 弹窗 end */
+
+/* 提交订单 end  */

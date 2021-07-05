@@ -1,0 +1,45 @@
+<!--
+ * @Description: 
+ * @Version: 1.0
+ * @Autor: yongqing
+ * @Date: 2020-12-07 09:40:11
+ * @LastEditors: yongqing
+ * @LastEditTime: 2021-01-18 16:37:31
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="referrer" content="same-origin" />
+        <title>六九教育平台(学校端)</title>
+        <% if (process.env.NODE_ENV === 'production') { %>
+        <!-- 生产环境 -->
+        <script>
+            document.write('<script src="./config/index.js?t=' + new Date().getTime() + '"><\/script>')
+        </script>
+        <% }else { %>
+        <!-- 开发环境 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./static/img/favicon.ico" />
+        <script src="./static/config/index.js"></script>
+        <script src="./static/plugins/echarts-4.8.0/echarts.min.js"></script>
+        <script src="./static/plugins/tinymce.4.9.4/tinymce.min.js"></script>
+        <script src="./static/plugins/tinymce.4.9.4/zh_CN.js"></script>
+        <script src="/static/plugins/aliyun-upload-sdk-1.5.0/lib/es6-promise.min.js"></script>
+        <script src="/static/plugins/aliyun-upload-sdk-1.5.0/lib/aliyun-oss-sdk-5.3.1.min.js"></script>
+        <script src="/static/plugins/aliyun-upload-sdk-1.5.0/aliyun-upload-sdk-1.5.0.min.js"></script>
+
+        <!-- 引入D3桑基图 -->
+        <script src="./static/plugins/d3.js"></script>
+        <!-- 引入echart中国地图 -->
+        <script src="./static/plugins/echarts-4.8.0/walden.js"></script>
+        <script src="./static/plugins/echarts-4.8.0/map.china.js"></script>
+
+        <% } %>
+    </head>
+
+    <body>
+        <div id="app"></div>
+    </body>
+</html>

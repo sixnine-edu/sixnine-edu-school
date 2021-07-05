@@ -1,0 +1,667 @@
+
+/* 订单详情 */
+
+.order-detail {
+    background: #f9f9f9;
+}
+
+/* 订单状态 */
+
+.order-detail .status-process {
+    padding: 20px;
+    border-top: 2px solid #e1251b;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    display: flex;
+    background: #fff;
+}
+
+.order-detail .status-process .status-box {
+    padding: 20px 30px 20px 20px;
+    text-align: center;
+    border-right: 1px solid #f5f5f5;
+}
+
+.order-detail .status-process .status-box .order-number {
+    width: 190px;
+    color: #999;
+}
+
+.order-detail .status-process .status-box .status {
+    font-size: 18px;
+    padding: 25px 0 20px;
+    font-weight: 600;
+    color: #e1251b;
+}
+
+.order-detail .status-process .status-box .description {
+    color: #999;
+}
+
+.order-detail .status-process .status-box .action {
+    margin-top: 30px;
+}
+
+.order-detail .status-process .status-box .action .action-a.red {
+    margin-right: 20px;
+    color: #e1251b;
+}
+
+.order-detail .status-process .status-box .action .action-a.btn {
+    background: #f5f5f5;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #ddd;
+    padding: 4px 15px;
+}
+
+.order-detail .status-process .status-box .action .action-a.btn:hover {
+    color: #e1251b;
+    border-color: #e1251b;
+    background: #fff;
+}
+
+.order-detail .status-process .status-box .action .action-a:hover {
+    color: #e1251b;
+}
+
+.order-detail .status-process .process-box {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.order-detail .status-process .process-box .tip {
+    color: #999;
+}
+
+.order-detail .status-process .process-box .process {
+    display: flex;
+    text-align: center;
+}
+
+.order-detail .status-process .process-box .item {
+    margin-right: 20px;
+    padding-right: 110px;
+}
+
+.order-detail .status-process .process-box .item:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.order-detail .status-process .process-box .item .img {
+    width: 30px;
+    height: 30px;
+    margin: 30px auto 25px;
+    background: url(../../../assets/img/icons.png) no-repeat;
+    position: relative;
+}
+
+.order-detail .status-process .process-box .item .img.process01 {
+    background-position: 0 -711px;
+}
+
+.order-detail .status-process .process-box .item .img.process02 {
+    background-position: -35px -676px;
+}
+
+.order-detail .status-process .process-box .item.active .img.process02 {
+    background-position: -35px -711px;
+}
+
+.order-detail .status-process .process-box .item .img.process03 {
+    background-position: -70px -676px;
+}
+
+.order-detail .status-process .process-box .item.active .img.process03 {
+    background-position: -70px -711px;
+}
+
+.order-detail .status-process .process-box .item .img.process04 {
+    background-position: -105px -676px;
+}
+
+.order-detail .status-process .process-box .item.active .img.process04 {
+    background-position: -105px -711px;
+}
+
+.order-detail .status-process .process-box .item .img.process05 {
+    background-position: -140px -676px;
+}
+
+.order-detail .status-process .process-box .item.active .img.process05 {
+    background-position: -140px -711px;
+}
+
+.order-detail .status-process .process-box .item .img:after {
+    position: absolute;
+    top: 10px;
+    right: -115px;
+    display: block;
+    content: " ";
+    width: 88px;
+    height: 10px;
+    background: url(../../../assets/img/icons.png) no-repeat -175px -686px;
+}
+
+.order-detail .status-process .process-box .item.active .img:after {
+    background-position: -175px -721px;
+}
+
+.order-detail .status-process .process-box .item:last-child .img:after {
+    width: 0;
+}
+
+.order-detail .status-process .process-box .item .text {
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.order-detail .status-process .process-box .item.active .text {
+    color: #000;
+}
+
+.order-detail .status-process .process-box .item .time {
+    color: #999;
+    font-family: arial;
+    width: 68px;
+}
+
+/* 订单状态 end */
+
+/* 配送信息 */
+
+.order-detail .delivery-box {
+    margin-top: 30px;
+}
+
+.order-detail .delivery-box .box-tab {
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+}
+
+.order-detail .delivery-box .box-tab .item {
+    position: relative;
+    padding: 9px 25px;
+    cursor: pointer;
+}
+
+.order-detail .delivery-box .box-tab .item.active {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #f2f2f2;
+    border-bottom: 0;
+}
+
+.order-detail .delivery-box .box-con {
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+.order-detail .delivery-box .box-con .deliver-msg {
+    width: 460px;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-item .text {
+    width: 80px;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods {
+    position: relative;
+    width: 340px;
+    margin: 30px 0 0;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods.over {
+    margin: 30px 32px 0;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .arrow {
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    height: 22px;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .arrow.disable {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods.over .arrow {
+    display: block;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .arrow.prev {
+    left: -32px;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .arrow.next {
+    right: -32px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .arrow::before {
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    content: " ";
+    font-size: 0;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .item-goods {
+    position: relative;
+    width: 340px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box {
+    position: absolute;
+    left: 0;
+    display: flex;
+    margin-top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box .item {
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box .item:last-child {
+    margin: 0;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box .item .img {
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box .item .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box .item .img .number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    border-radius: 6px 0 6px 0;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+}
+
+.order-detail .delivery-box .box-con .deliver-msg .d-goods .goods-box .item .name{
+    width: 60px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+.order-detail .delivery-box .box-con .logistics {
+    flex: 1;
+}
+
+.order-detail .delivery-box .box-con .logistics .l-tit {
+    display: flex;
+}
+
+.order-detail .delivery-box .box-con .logistics .l-tit .l-state {
+    color: #c00;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box {
+    height: 175px;
+    overflow-y: scroll;
+    position: relative;
+    margin-top: 5px;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: " ";
+    font-size: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box::after {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: " ";
+    font-size: 0;
+    background: #eee;
+    z-index: 0;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box .item {
+    padding: 10px 0 5px 25px;
+    position: relative;
+    margin-left: 6px;
+    border-left: 1px solid #eee;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box .item::before {
+    position: absolute;
+    left: -6px;
+    top: 12px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    content: " ";
+    font-size: 0;
+    background: #ccc;
+    border: 3px solid #fff;
+    z-index: 2;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box .item:first-child:before {
+    background: #e1251b;
+    border-color: #fed1d4;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box .item .time {
+    color: #999;
+}
+
+.order-detail .delivery-box .box-con .logistics .logistics-box .item .text {
+    margin-top: 5px;
+    max-width: 590px;
+    line-height: 20px;
+}
+
+/* 配送信息 end */
+
+/* 订单信息 */
+
+.order-detail .order-info {
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    display: flex;
+    background: #fff;
+}
+
+.order-detail .order-info .item {
+    width: 25%;
+    border-left: 1px solid #f5f5f5;
+    line-height: 20px;
+    padding: 0 30px;
+}
+
+.order-detail .order-info .item:first-child {
+    padding-left: 10px;
+    border: 0;
+}
+
+.order-detail .order-info .item .tit {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.order-detail .order-info .item .con {
+    padding-top: 10px;
+}
+
+.order-detail .order-info .item .con-item {
+    margin-top: 5px;
+    display: flex;
+}
+
+.order-detail .order-info .item .con-item .item-tit {
+    width: 70px;
+    color: #999;
+}
+
+.order-detail .order-info .item .con-item .item-con {
+    flex: 1;
+    font-family: arial;
+}
+
+/* 订单信息 end */
+
+/* 商品信息 */
+
+.order-detail .goods-box {
+    margin-top: 30px;
+}
+
+.order-detail .goods-box .shop {
+    height: 14px;
+    line-height: 14px;
+    padding: 0 10px 10px;
+}
+
+.order-detail .goods-box .shop .shop-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    background: url(../../../assets/img/icons.png) no-repeat -28px -458px;
+}
+
+.order-detail .goods-box .shop:hover .shop-icon {
+    background-position: -9px -458px;
+}
+
+.order-detail .goods-box .shop .name {
+    display: inline-block;
+    vertical-align: top;
+    color: #999999;
+}
+
+.order-detail .goods-box .shop:hover .name {
+    color: #e1251b;
+}
+
+.order-detail .goods-box .goods-con {
+    background: #fff;
+    padding: 25px 20px 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+.order-detail .goods-box .order-table {
+    margin-bottom: 20px;
+}
+
+.order-detail .goods-box .order-table .box {
+    width: 100%;
+    text-align: center;
+}
+
+.order-detail .goods-box .order-table .box-tit th {
+    background: #f9f9f9;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 400;
+    border: 1px solid #f9f9f9;
+}
+
+.order-detail .goods-box .order-table .box-tit .tal {
+    text-align: left;
+}
+
+.order-detail .goods-box .order-table .box-tr td {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info {
+    width: 450px;
+    padding-left: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info .img {
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    margin-right: 15px;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info .name-sku {
+    flex: 1;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info .name-sku .name {
+    max-height: 36px;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info .name-sku .name:hover {
+    color: #e1251b;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-info .name-sku .sku {
+    display: block;
+    line-height: 18px;
+    margin-top: 6px;
+    color: #999;
+}
+
+.order-detail .goods-box .order-table .box-tr .goods-number {
+    font-family: arial;
+    text-align: left;
+}
+
+.order-detail .goods-box .order-table .box-tr .price {
+    font-family: verdana;
+    color: #000;
+    justify-content: center;
+}
+
+.order-detail .goods-box .order-table .box-tr .action-btn {
+    display: block;
+    border-radius: 2px;
+    width: 85px;
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 0;
+    margin: 3px auto;
+    text-align: center;
+    background: #fff;
+    color: #e1251b;
+    border: 1px solid #e1251b;
+}
+
+.order-detail .goods-box .order-table .box-tr .action-btn:hover {
+    background: #e1251b;
+    color: #fff;
+}
+
+.order-detail .goods-box .goods-total {
+    background: #fff;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.order-detail .goods-box .goods-total .item {
+    margin-bottom: 10px;
+}
+
+.total-return {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 24px;
+}
+
+.total-return .action-btn {
+    display: inline-block;
+    color: #e1251b;
+    border: 1px solid #e1251b;
+    width: 85px;
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.total-return .action-btn:hover {
+    background: #e1251b;
+    color: #fff;
+}
+
+.order-detail .goods-box .goods-total .item .tit,
+.order-detail .goods-box .goods-total .item .price {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+.order-detail .goods-box .goods-total .item .price {
+    width: 200px;
+    color: #000;
+    font-family: verdana;
+}
+
+.order-detail .goods-box .goods-total .item .price.big {
+    color: #e1251b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 商品信息 end */
+
+/* 订单详情 end */

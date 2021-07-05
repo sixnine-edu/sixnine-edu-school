@@ -1,0 +1,766 @@
+
+/* 购物车列表 */
+
+.cart .step-box .left .img {
+    background: url(../../../assets/img/icons.png) no-repeat 0 -249px;
+}
+
+.cart .cart-tab {
+    padding: 12px 0;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    display: flex;
+    line-height: 14px;
+}
+
+.cart .cart-tab .tab-check {
+    width: 100px;
+}
+
+.cart .cart-tab .tab-img,
+.cart .cart-con .tab-img {
+    width: 90px;
+}
+
+.cart .cart-tab .tab-check .checkbox,
+.cart .cart-con .tab-check .checkbox {
+    margin-left: 15px;
+}
+
+.cart .cart-tab .tab-check .text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.cart .cart-tab .tab-name {
+    width: 370px;
+}
+
+.cart .cart-tab .tab-price,
+.cart .cart-con .item .tab-price {
+    width: 140px;
+    text-align: center;
+}
+
+.cart .cart-tab .tab-number,
+.cart .cart-con .tab-number {
+    width: 150px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.cart .cart-tab .tab-total,
+.cart .cart-con .tab-total {
+    width: 160px;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.cart .cart-tab .tab-action {
+    width: 80px;
+    text-align: left;
+}
+
+.cart .cart-con .shop-box {
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0 15px;
+}
+
+.cart .cart-con .shop-box .shop-msg {
+    display: inline-block;
+    margin-left: 16px;
+    width: 48%;
+}
+
+.cart .cart-con .shop-box .shop-msg .checkbox {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.cart .cart-con .shop-box .shop-msg .self {
+    background: #e1251b;
+    color: #fff;
+    padding: 1px 3px;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+
+.cart .cart-con .shop-box .shop-msg .shop-name {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.cart .cart-con .shop-box .shop-coupon {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    position: relative;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-tit {
+    display: inline-block;
+    width: 58px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 18px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #e1251b;
+    background: url(../../../assets/img/icons.png) no-repeat 0 -386px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-tit::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    border: 4px solid transparent;
+    border-radius: 2px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-tit::before {
+    border-top: 4px solid #e1251b;
+}
+
+.cart .cart-con .shop-box .shop-coupon.active .coupon-tit:before {
+    transform: rotate(180deg);
+    top: 6px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #e1251b;
+    box-shadow: 0 3px 5px rgba(0,0,0,.1);
+    padding: 10px 0 10px 15px;
+    width: 278px;
+    z-index: 10;
+    display: none;
+}
+
+.cart .cart-con .shop-box .shop-coupon.active .coupon-con {
+    display: block;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con::before,
+.cart .cart-con .shop-box .shop-coupon .coupon-con::after {
+    position: absolute;
+    top: -17px;
+    left: 30px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    border: 8px solid transparent;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con::before {
+    border-bottom: 8px solid #df0b00;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con::after {
+    top: -16px;
+    border-bottom: 8px solid #fff;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-box {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item {
+    padding: 5px 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .price {
+    display: inline-block;
+    width: 46px;
+    height: 22px;
+    padding: 0 3px;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px dashed #fff;
+    border-top: 0;
+    border-bottom: 0;
+    background: #e1251b;
+    font-weight: 600;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .price .big {
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .info {
+    height: 30px;
+    margin-left: 10px;
+    line-height: 15px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .info .name {
+    display: block;
+    width: 130px;
+    height: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    font-family: arial;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .info .time {
+    display: block;
+    font-family: arial;
+    color: #999;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 3px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .btn {
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    margin-top: 7px;
+    width: 50px;
+    text-align: center;
+    color: #666;
+    border-radius: 2px;
+    margin-left: 15px;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .btn:hover {
+    border-color: #e1251b;
+    color: #e1251b;
+}
+
+.cart .cart-con .shop-box .shop-coupon .coupon-con .coupon-item .btn.active {
+    color: #999;
+    border: 0;
+    cursor: default;
+}
+
+.cart .cart-con .activity-msg {
+    display: flex;
+    border: 1px solid #eee;
+    border-width: 0 1px;
+    padding: 10px 22px;
+    align-items: center;
+    position: relative;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+.cart .cart-con .activity-msg .a-info {
+    width: 880px;
+    display: flex;
+    align-items: center;
+}
+
+.activity-goods-checked{
+    position: relative;
+}
+
+.activity-goods-checked::after{
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 1px dashed #ddd;
+    z-index: 0;    
+}
+
+.cart .cart-con .activity-msg .a-info .icon {
+    padding: 1px 7px;
+    height: 16px;
+    line-height: 16px;
+    background: #e1251b;
+    color: #fff;
+    position: relative;
+}
+
+.cart .cart-con .activity-msg .a-info .icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    font-size: 0;
+    border-top: 3px solid #e1251b;
+    border-right: 6px solid transparent;
+}
+
+.cart .cart-con .activity-msg .a-info .text {
+    margin-left: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart .cart-con .activity-msg .a-info .text-red {
+    color: #e1251b;
+}
+
+.cart .cart-con .activity-msg .a-info .link {
+    margin-left: 10px;
+}
+
+.cart .cart-con .activity-msg .a-info .link .arr {
+    font-family: Consolas;
+}
+
+.cart .cart-con .activity-msg .a-info .link:hover {
+    color: #e1251b;
+}
+
+.cart .cart-con .activity-msg .a-price {
+    text-align: right;
+    min-width: 100px;
+}
+
+.cart .cart-con .activity-msg .a-price .discount {
+    color: #e1251b;
+}
+
+.cart .cart-con .item {
+    padding: 15px 0;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    margin-top: -1px;
+    position: relative;
+}
+
+.cart .cart-con .item.active {
+    background: #fffcf8;
+}
+
+.cart .cart-con .tab-check {
+    width: 44px;
+}
+
+.cart .cart-con .item .tab-img {
+    width: 90px;
+}
+
+.cart .cart-con .item .tab-img .img-box {
+    display: block;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+}
+
+.cart .cart-con .item .tab-img .img-box img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.cart .cart-con .item .tab-name {
+    line-height: 20px;
+    align-self: flex-start;
+    width: 426px;
+}
+
+.cart .cart-con .item .tab-name .name {
+    max-width: 380px;
+    max-height: 36px;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+.cart .cart-con .item .tab-name .name:hover {
+    color: #e1251b;
+}
+
+.cart .cart-con .item .tab-name .sku {
+    max-width: 380px;
+    height: 20px;
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cart .cart-con .item .tab-price .unit-price {
+    font-family: verdana;
+}
+
+.cart .cart-con .item .tab-price .promotion-box {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-tit {
+    display: inline-block;
+    width: 28px;
+    border: 1px solid #e1251b;
+    color: #e1251b;
+    height: 18px;
+    text-align: left;
+    line-height: 20px;
+    padding: 0 15px 0 5px;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-tit::before {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    border: 4px solid transparent;
+    border-top: 4px solid #e1251b;
+    border-radius: 2px;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con {
+    position: absolute;
+    left: 0px;
+    top: 19px;
+    padding: 10px 14px 10px 10px;
+    width: 276px;
+    z-index: 30;
+    box-shadow: 0 3px 5px rgba(0,0,0,.05);
+    border: 1px solid #e1251b;
+    background: #fff;
+    text-align: left;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con::before {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: #fff;
+    content: " ";
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-item {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-item .radio {
+    align-self: flex-start;
+    margin: 4px 5px 0 0;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-item .p-info {
+    flex: 1;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-btns .sure {
+    padding: 3px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: #e1251b;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-btns .sure:hover {
+    opacity: 0.9;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-btns .cancel {
+    padding: 3px 10px;
+    border-radius: 2px;
+    border: 1px solid #eee;
+    background: #f7f7f7;
+    margin-left: 10px;
+}
+
+.cart .cart-con .item .tab-price .promotion-box .p-con .p-btns .cancel:hover {
+    background: #fff;
+}
+
+.cart .cart-con .item .tab-number .goods-number .reduce,
+.cart .cart-con .item .tab-number .goods-number .increase {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    font-size: 22px;
+    text-align: center;
+    line-height: 26px;
+    color: #999;
+    cursor: pointer;
+    border-radius: 50%;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+
+.cart .cart-con .item.active .tab-number .goods-number .reduce,
+.cart .cart-con .item.active .tab-number .goods-number .increase {
+    background: #fff;
+}
+
+.cart .cart-con .item .tab-number .goods-number .limit {
+    cursor: not-allowed;
+    color: #ccc;
+}
+
+.cart .cart-con .item .tab-number .goods-number .number {
+    border: 0;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-family: arial;
+    vertical-align: top;
+    background: transparent;
+}
+
+.cart .cart-con .item .tab-total {
+    color: #e1251b;
+    font-weight: 600;
+    font-family: verdana;
+}
+
+.cart .cart-con .item .tab-action .action-a {
+    display: block;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.cart .cart-con .item .tab-action .collect {
+    margin-bottom: 5px;
+}
+
+.cart .cart-con .item .tab-action .del {
+    color: #999;
+}
+
+.cart .cart-con .item .tab-action .action-a:hover {
+    color: #e1251b;
+}
+
+.cart .cart-con .shop-box.invalid .shop-msg .checkbox,
+.cart .cart-con .shop-box.invalid .shop-coupon {
+    display: none;
+}
+
+.cart .cart-con .item.invalid .tab-check .checkbox {
+    display: none;
+}
+
+.cart .cart-con .item.invalid .tab-check .invalid-text {
+    background: #dadada;
+    color: #5f5f5f;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.cart .cart-con .item.invalid .tab-name .name:hover,
+.cart .cart-con .item.invalid .tab-name .sku,
+.cart .cart-con .item.invalid .tab-price,
+.cart .cart-con .item.invalid .tab-total {
+    color: #ccc;;
+}
+
+/* 购物车列表 end */
+
+/* 结算 */
+
+.cart .cart-bottom {
+    display: flex;
+    border: 1px solid #eee;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.cart .cart-bottom .total-box {
+    flex: 1;
+    display: flex;
+}
+.cart .cart-bottom .total-box .check-all {
+    margin-left: 16px;
+    height: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.cart .cart-bottom .total-box .check-all .text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.cart .cart-bottom .total-box .del-selected,
+.cart .cart-bottom .total-box .clear-invalid {
+    margin-left: 20px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: top;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.cart .cart-bottom .total-box .del-selected:hover,
+.cart .cart-bottom .total-box .clear-invalid:hover {
+    color: #e1251b;
+}
+
+.cart .cart-bottom .settlement-box {
+    display: flex;
+    position: relative;
+    padding-right: 93px;
+}
+
+.cart .cart-bottom .settlement-box .amount {
+    line-height: 20px;
+    margin-top: 6px;
+}
+
+.cart .cart-bottom .settlement-box .amount .number {
+    font-family: verdana;
+    color: #e1251b;
+    margin: 0 3px;
+}
+
+.cart .cart-bottom .settlement-box .price-box {
+    height: 44px;
+    line-height: 20px;
+    margin: 6px 15px 0;
+}
+
+.cart .cart-bottom .settlement-box .price-box .total-price .text {
+    font-size: 16px;
+    color: #e1251b;
+    font-family: verdana;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cart .cart-bottom .settlement-box .price-box .discount-price {
+    display: block;
+    text-align: right;
+    font-family: verdana;
+}
+
+.cart .cart-bottom .settlement-box .btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: block;
+    width: 94px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background: #e1251b;
+    font-weight: 600;
+}
+
+.cart .cart-bottom .settlement-box .btn:hover {
+    opacity: 0.9;
+}
+
+/* 结算 end */
+
+
+
+
+/* 复选框 */
+.checkbox {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    outline: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.checkbox::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox.default::before {
+    border: 1px solid #ddd;
+    background: #fff;
+    z-index: 1;
+}
+
+.checkbox.checked::before {
+    border: 0;
+    background: url('../../../assets/img/icons.png') no-repeat 0 -367px;
+    z-index: 1;
+}
+
+.checkbox.disabled::before {
+    background: #eee;
+    cursor: not-allowed;
+    border: 1px solid #ddd;
+}
+
+/* 复选框 end */

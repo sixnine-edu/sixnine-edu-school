@@ -1,0 +1,287 @@
+
+/* 个人中心首页 */
+
+/* 用户信息 */
+
+.user-center .home .my-info {
+    padding: 30px;
+    border: 1px solid #eee;
+    display: flex;
+}
+
+.user-center .home .my-info .info-box {
+    padding-right: 30px;
+    border-right: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.user-center .home .my-info .info-box .portrait-box {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,.05);
+    overflow: hidden;
+    background: #fff;
+}
+
+.user-center .home .my-info .info-box .portrait-box .portrait {
+    width: 100%;
+    height: 100%;
+    line-height: 75px;
+    text-align: center;
+    font-size: 0;
+}
+
+.user-center .home .my-info .info-box .portrait-box .portrait img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.user-center .home .my-info .info-box .portrait-box .edit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 75px;
+    display: none;
+}
+
+.user-center .home .my-info .info-box .portrait-box:hover .edit {
+    display: block;
+}
+
+.user-center .home .my-info .info-box .name-box {
+    margin-left: 20px;
+}
+
+.user-center .home .my-info .info-box .name-box .name {
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.user-center .home .my-info .info-box .name-box .level-box {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    line-height: 16px;
+}
+
+.user-center .home .my-info .info-box .name-box .level-box .text {
+    color: #999;
+}
+
+.user-center .home .my-info .info-box .name-box .level {
+    flex: 1;
+    line-height: 16px;
+    padding-left: 19px;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-center .home .my-info .info-box .name-box .level::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    content: " ";
+    background: url(../../../assets/img/icons.png) no-repeat;
+}
+
+.user-center .home .my-info .info-box .name-box .level.v1::before {
+    background-position: 0 -614px;
+}
+
+.user-center .home .my-info .info-box .name-box .level.v2::before {
+    background-position: -19px -614px;
+}
+
+.user-center .home .my-info .info-box .name-box .level.v3::before {
+    background-position: -38px -614px;
+}
+
+.user-center .home .my-info .info-box .name-box .number {
+    font-family: arial;
+}
+
+.user-center .home .my-info .order-tab {
+    flex: 1;
+    display: flex;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.user-center .home .my-info .order-tab .item {
+    flex: 1;
+    cursor: pointer;
+}
+
+.user-center .home .my-info .order-tab .item .img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background: url(../../../assets/img/icons.png) no-repeat;
+}
+
+.user-center .home .my-info .order-tab .item .img.unpaid {
+    background-position: 0 -559px;
+}
+
+.user-center .home .my-info .order-tab .item .img.no-shipped {
+    background-position: -55px -559px;
+}
+
+.user-center .home .my-info .order-tab .item .img.shipped {
+    background-position: -110px -559px;
+}
+
+.user-center .home .my-info .order-tab .item .img.no-reviewed {
+    background-position: -165px -559px;
+}
+
+.user-center .home .my-info .order-tab .item .text {
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.user-center .home .my-info .order-tab .item:hover .text {
+    color: #e1251b;
+}
+
+.user-center .home .my-info .order-tab .item .text .number {
+    font-weight: 700;
+    font-family: verdana;
+    margin-left: 5px;
+    color: #e1251b;
+}
+
+/* 用户信息 end */
+
+
+
+.user-center .home .buy-member .text {
+    margin-left: 320px;
+    color: #fff;
+}
+
+.user-center .home .buy-member .text .big {
+    font-size: 24px;
+}
+
+.user-center .home .buy-member .text .small {
+    margin-top: 10px;
+    font-family: arial;
+}
+
+.user-center .home .buy-member .btn {
+    margin-left: 70px;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    background-size: 100% 100%;
+    font-size: 14px;
+    color: #150f0b;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.user-center .home .order-head {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-center .home .order-head .text {
+    flex: 1;
+    font-weight: 600;
+}
+
+.user-center .home .order-head .all {
+    color: #999;
+}
+
+.user-center .home .order-head .all:hover {
+    color: #e1251b;
+}
+
+.user-center .home .order-list .order-table {
+    border: 1px solid #eee;
+    border-top: 0;
+}
+
+.user-center .home .order-list .order-table .box {
+    border: 0;
+}
+
+.user-center .home .order-list .order-table .box td {
+    border: 0;
+    padding: 10px 0;
+    border-top: 1px dotted #ddd;
+}
+
+.user-center .home .order-list .order-table .box tr:first-child td {
+    border-top: 0;
+}
+
+.user-center .order-list .order-table .box .goods-info {
+    padding-left: 10px;
+}
+
+.user-center .home .guess-like .guess-like-tit {
+    height: 37px;
+    line-height: 37px;
+    padding: 0 5px 0 15px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.user-center .home .guess-like .guess-like-tit .text {
+    font-size: 12px;
+}
+
+.user-center .home .guess-like .guess-like-tit .swiper-controls {
+    margin-right: 0;
+}
+
+.user-center .home .guess-like .list-con {
+    padding: 21px;
+    border: 1px solid #eee;
+    border-top: 0;
+}
+
+.user-center .home .guess-like .list-con .item {
+    width: 244px;
+}
+
+.user-center .home .guess-like .list-con .item .goods-img {
+    width: 244px;
+    height: 244px;
+    line-height: 244px;
+}
+
+/* 个人中心首页 end */
