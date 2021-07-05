@@ -1,7 +1,9 @@
 # sixnine-edu-school
 ### 功能截图
+
+#### 首页
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_1.png" width="950" height="auto"/>
-### 
+
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_2.png" width="950" height="auto"/>
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_3.png" width="950" height="auto"/>
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_4.png" width="950" height="auto"/>
