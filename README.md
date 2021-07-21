@@ -13,10 +13,8 @@
 
 打包：npm run build
 
-### 如需体验demo请加微信好友获取账号密码
- <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG278.png" width="624" height="371"/>
 
-### 功能截图
+### 部分功能截图
 
 #### 教务管理中心
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_1.png" width="950" height="auto"/>
@@ -49,4 +47,7 @@
 <img src="https://github.com/sixnine-edu/sixnine-edu-school/blob/main/screenshots/IMG_10.png" width="950" height="auto"/>
 
 
+
+### 如需体验demo请加微信好友获取账号密码
+ <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG278.png" width="624" height="371"/>
 
