@@ -13,7 +13,7 @@
 
 打包：npm run build
 
-### 如需体验请加微信好友发送体验链接
+### 如需体验demo请加微信好友获取账号密码
  <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG278.png" width="624" height="371"/>
 
 ### 功能截图
